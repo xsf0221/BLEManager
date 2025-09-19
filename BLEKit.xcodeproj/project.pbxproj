@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		BC50BCB02E7C40DF004C01EA /* BLEKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BC50BCA42E7C40DF004C01EA /* BLEKit.framework */; };
+		BC50BCF92E7C5B12004C01EA /* BLEKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BC50BCA42E7C40DF004C01EA /* BLEKit.framework */; };
+		E39FEE3FF43F4D3383271227 /* BLEKit.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = BC50BCA42E7C40DF004C01EA /* BLEKit.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -18,12 +20,60 @@
 			remoteGlobalIDString = BC50BCA32E7C40DF004C01EA;
 			remoteInfo = BLEKit;
 		};
+		BC50BCDE2E7C59A4004C01EA /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BC50BC9B2E7C40DF004C01EA /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = BC50BCC72E7C59A3004C01EA;
+			remoteInfo = BLEKitDemo;
+		};
+		BC50BCE82E7C59A4004C01EA /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BC50BC9B2E7C40DF004C01EA /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = BC50BCC72E7C59A3004C01EA;
+			remoteInfo = BLEKitDemo;
+		};
+		BC50BCFB2E7C5B12004C01EA /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BC50BC9B2E7C40DF004C01EA /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = BC50BCA32E7C40DF004C01EA;
+			remoteInfo = BLEKit;
+		};
 /* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		E39FEE3FF43F4D3383271226 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				E39FEE3FF43F4D3383271227 /* BLEKit.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		BC50BCA42E7C40DF004C01EA /* BLEKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = BLEKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		BC50BCAF2E7C40DF004C01EA /* BLEKitTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BLEKitTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		BC50BCC82E7C59A3004C01EA /* BLEKitDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BLEKitDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		BC50BCDD2E7C59A4004C01EA /* BLEKitDemoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BLEKitDemoTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		BC50BCE72E7C59A4004C01EA /* BLEKitDemoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BLEKitDemoUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
+
+/* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
+		BC50BCEF2E7C59A4004C01EA /* Exceptions for "BLEKitDemo" folder in "BLEKitDemo" target */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				Info.plist,
+			);
+			target = BC50BCC72E7C59A3004C01EA /* BLEKitDemo */;
+		};
+/* End PBXFileSystemSynchronizedBuildFileExceptionSet section */
 
 /* Begin PBXFileSystemSynchronizedRootGroup section */
 		BC50BCA62E7C40DF004C01EA /* BLEKit */ = {
@@ -34,6 +84,24 @@
 		BC50BCB32E7C40DF004C01EA /* BLEKitTests */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
 			path = BLEKitTests;
+			sourceTree = "<group>";
+		};
+		BC50BCC92E7C59A3004C01EA /* BLEKitDemo */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			exceptions = (
+				BC50BCEF2E7C59A4004C01EA /* Exceptions for "BLEKitDemo" folder in "BLEKitDemo" target */,
+			);
+			path = BLEKitDemo;
+			sourceTree = "<group>";
+		};
+		BC50BCE02E7C59A4004C01EA /* BLEKitDemoTests */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = BLEKitDemoTests;
+			sourceTree = "<group>";
+		};
+		BC50BCEA2E7C59A4004C01EA /* BLEKitDemoUITests */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = BLEKitDemoUITests;
 			sourceTree = "<group>";
 		};
 /* End PBXFileSystemSynchronizedRootGroup section */
@@ -54,6 +122,28 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		BC50BCC52E7C59A3004C01EA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BC50BCF92E7C5B12004C01EA /* BLEKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BC50BCDA2E7C59A4004C01EA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BC50BCE42E7C59A4004C01EA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -62,6 +152,9 @@
 			children = (
 				BC50BCA62E7C40DF004C01EA /* BLEKit */,
 				BC50BCB32E7C40DF004C01EA /* BLEKitTests */,
+				BC50BCC92E7C59A3004C01EA /* BLEKitDemo */,
+				BC50BCE02E7C59A4004C01EA /* BLEKitDemoTests */,
+				BC50BCEA2E7C59A4004C01EA /* BLEKitDemoUITests */,
 				BC50BCA52E7C40DF004C01EA /* Products */,
 			);
 			sourceTree = "<group>";
@@ -71,6 +164,9 @@
 			children = (
 				BC50BCA42E7C40DF004C01EA /* BLEKit.framework */,
 				BC50BCAF2E7C40DF004C01EA /* BLEKitTests.xctest */,
+				BC50BCC82E7C59A3004C01EA /* BLEKitDemo.app */,
+				BC50BCDD2E7C59A4004C01EA /* BLEKitDemoTests.xctest */,
+				BC50BCE72E7C59A4004C01EA /* BLEKitDemoUITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -134,6 +230,76 @@
 			productReference = BC50BCAF2E7C40DF004C01EA /* BLEKitTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
+		BC50BCC72E7C59A3004C01EA /* BLEKitDemo */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BC50BCF02E7C59A4004C01EA /* Build configuration list for PBXNativeTarget "BLEKitDemo" */;
+			buildPhases = (
+				BC50BCC42E7C59A3004C01EA /* Sources */,
+				BC50BCC52E7C59A3004C01EA /* Frameworks */,
+				BC50BCC62E7C59A3004C01EA /* Resources */,
+				E39FEE3FF43F4D3383271226 /* Embed Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				BC50BCFA2E7C5B12004C01EA /* PBXTargetDependency */,
+			);
+			fileSystemSynchronizedGroups = (
+				BC50BCC92E7C59A3004C01EA /* BLEKitDemo */,
+			);
+			name = BLEKitDemo;
+			packageProductDependencies = (
+			);
+			productName = BLEKitDemo;
+			productReference = BC50BCC82E7C59A3004C01EA /* BLEKitDemo.app */;
+			productType = "com.apple.product-type.application";
+		};
+		BC50BCDC2E7C59A4004C01EA /* BLEKitDemoTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BC50BCF32E7C59A4004C01EA /* Build configuration list for PBXNativeTarget "BLEKitDemoTests" */;
+			buildPhases = (
+				BC50BCD92E7C59A4004C01EA /* Sources */,
+				BC50BCDA2E7C59A4004C01EA /* Frameworks */,
+				BC50BCDB2E7C59A4004C01EA /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				BC50BCDF2E7C59A4004C01EA /* PBXTargetDependency */,
+			);
+			fileSystemSynchronizedGroups = (
+				BC50BCE02E7C59A4004C01EA /* BLEKitDemoTests */,
+			);
+			name = BLEKitDemoTests;
+			packageProductDependencies = (
+			);
+			productName = BLEKitDemoTests;
+			productReference = BC50BCDD2E7C59A4004C01EA /* BLEKitDemoTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		BC50BCE62E7C59A4004C01EA /* BLEKitDemoUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BC50BCF62E7C59A4004C01EA /* Build configuration list for PBXNativeTarget "BLEKitDemoUITests" */;
+			buildPhases = (
+				BC50BCE32E7C59A4004C01EA /* Sources */,
+				BC50BCE42E7C59A4004C01EA /* Frameworks */,
+				BC50BCE52E7C59A4004C01EA /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				BC50BCE92E7C59A4004C01EA /* PBXTargetDependency */,
+			);
+			fileSystemSynchronizedGroups = (
+				BC50BCEA2E7C59A4004C01EA /* BLEKitDemoUITests */,
+			);
+			name = BLEKitDemoUITests;
+			packageProductDependencies = (
+			);
+			productName = BLEKitDemoUITests;
+			productReference = BC50BCE72E7C59A4004C01EA /* BLEKitDemoUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -149,6 +315,17 @@
 					};
 					BC50BCAE2E7C40DF004C01EA = {
 						CreatedOnToolsVersion = 16.4;
+					};
+					BC50BCC72E7C59A3004C01EA = {
+						CreatedOnToolsVersion = 16.4;
+					};
+					BC50BCDC2E7C59A4004C01EA = {
+						CreatedOnToolsVersion = 16.4;
+						TestTargetID = BC50BCC72E7C59A3004C01EA;
+					};
+					BC50BCE62E7C59A4004C01EA = {
+						CreatedOnToolsVersion = 16.4;
+						TestTargetID = BC50BCC72E7C59A3004C01EA;
 					};
 				};
 			};
@@ -168,6 +345,9 @@
 			targets = (
 				BC50BCA32E7C40DF004C01EA /* BLEKit */,
 				BC50BCAE2E7C40DF004C01EA /* BLEKitTests */,
+				BC50BCC72E7C59A3004C01EA /* BLEKitDemo */,
+				BC50BCDC2E7C59A4004C01EA /* BLEKitDemoTests */,
+				BC50BCE62E7C59A4004C01EA /* BLEKitDemoUITests */,
 			);
 		};
 /* End PBXProject section */
@@ -181,6 +361,27 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 		BC50BCAD2E7C40DF004C01EA /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BC50BCC62E7C59A3004C01EA /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BC50BCDB2E7C59A4004C01EA /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BC50BCE52E7C59A4004C01EA /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -204,6 +405,27 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		BC50BCC42E7C59A3004C01EA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BC50BCD92E7C59A4004C01EA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BC50BCE32E7C59A4004C01EA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
@@ -211,6 +433,21 @@
 			isa = PBXTargetDependency;
 			target = BC50BCA32E7C40DF004C01EA /* BLEKit */;
 			targetProxy = BC50BCB12E7C40DF004C01EA /* PBXContainerItemProxy */;
+		};
+		BC50BCDF2E7C59A4004C01EA /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = BC50BCC72E7C59A3004C01EA /* BLEKitDemo */;
+			targetProxy = BC50BCDE2E7C59A4004C01EA /* PBXContainerItemProxy */;
+		};
+		BC50BCE92E7C59A4004C01EA /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = BC50BCC72E7C59A3004C01EA /* BLEKitDemo */;
+			targetProxy = BC50BCE82E7C59A4004C01EA /* PBXContainerItemProxy */;
+		};
+		BC50BCFA2E7C5B12004C01EA /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = BC50BCA32E7C40DF004C01EA /* BLEKit */;
+			targetProxy = BC50BCFB2E7C5B12004C01EA /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -356,6 +593,7 @@
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_NSHumanReadableCopyright = "";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -389,6 +627,7 @@
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_NSHumanReadableCopyright = "";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -440,6 +679,132 @@
 			};
 			name = Release;
 		};
+		BC50BCF12E7C59A4004C01EA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 9965Y365RW;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = BLEKitDemo/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.interview.BLEKitDemo;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		BC50BCF22E7C59A4004C01EA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 9965Y365RW;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = BLEKitDemo/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.interview.BLEKitDemo;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		BC50BCF42E7C59A4004C01EA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 9965Y365RW;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 18.5;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.interview.BLEKitDemoTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/BLEKitDemo.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/BLEKitDemo";
+			};
+			name = Debug;
+		};
+		BC50BCF52E7C59A4004C01EA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 9965Y365RW;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 18.5;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.interview.BLEKitDemoTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/BLEKitDemo.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/BLEKitDemo";
+			};
+			name = Release;
+		};
+		BC50BCF72E7C59A4004C01EA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 9965Y365RW;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.interview.BLEKitDemoUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = BLEKitDemo;
+			};
+			name = Debug;
+		};
+		BC50BCF82E7C59A4004C01EA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 9965Y365RW;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.interview.BLEKitDemoUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = BLEKitDemo;
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -466,6 +831,33 @@
 			buildConfigurations = (
 				BC50BCBC2E7C40DF004C01EA /* Debug */,
 				BC50BCBD2E7C40DF004C01EA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		BC50BCF02E7C59A4004C01EA /* Build configuration list for PBXNativeTarget "BLEKitDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BC50BCF12E7C59A4004C01EA /* Debug */,
+				BC50BCF22E7C59A4004C01EA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		BC50BCF32E7C59A4004C01EA /* Build configuration list for PBXNativeTarget "BLEKitDemoTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BC50BCF42E7C59A4004C01EA /* Debug */,
+				BC50BCF52E7C59A4004C01EA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		BC50BCF62E7C59A4004C01EA /* Build configuration list for PBXNativeTarget "BLEKitDemoUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BC50BCF72E7C59A4004C01EA /* Debug */,
+				BC50BCF82E7C59A4004C01EA /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
